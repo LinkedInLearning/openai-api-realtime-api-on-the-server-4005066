@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-time Chat with WebSockets</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" defer src="js/app.js"></script>
+</head>
+
+<body>
+  <main class="app-container">
+    <header class="top-section">
+      <h1>Real-time Chat with WebSockets</h1>
+      <nav class="controls">
+        <button id="connect-btn" class="btn">Connect</button>
+        <button id="mic-btn" class="btn" disabled>Enable Mic</button>
+      </nav>
+      <output id="status" class="status" role="status">Not Connected</output>
+      <section class="visualizers" aria-label="Audio Visualizers">
+        <article class="visualizer-container">
+          <canvas id="aiVisualizer" class="visualizer" width="600" height="200"
+            aria-label="AI Audio Visualizer"></canvas>
+          <div class="visualizer-label">AI</div>
+        </article>
+        <article class="visualizer-container">
+          <canvas id="micVisualizer" class="visualizer" width="600" height="200"
+            aria-label="Microphone Audio Visualizer"></canvas>
+          <div class="visualizer-label">Mic</div>
+        </article>
+      </section>
+    </header>
+
+    <section class="chat-section">
+      <output id="chat-messages" class="chat-messages" role="log" aria-live="polite">
+        <!-- Chat messages will be displayed here -->
+      </output>
+      <footer class="chat-input-container">
+        <label for="chat-input" class="visually-hidden">Type your message</label>
+        <input type="text" id="chat-input" placeholder="Type your message here..." class="chat-input">
+        <button id="send-btn" class="send-button" aria-label="Send message">Send</button>
+      </footer>
+    </section>
+  </main>
+</body>
+
+</html>

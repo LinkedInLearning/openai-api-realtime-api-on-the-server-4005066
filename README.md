@@ -1,34 +1,66 @@
 # OpenAI API: Realtime API on the Server
-This is the repository for the LinkedIn Learning course `OpenAI API: Realtime API on the Server`. The full course is available from [LinkedIn Learning][lil-course-url].
+This is the repository for the LinkedIn Learning course OpenAI API: Realtime API on the Server. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
+![lil-thumbnail-url]
+
+## Course Description
+
+With OpenAI’s Realtime API, you can build a custom real-time voice-to-voice AI chat into any app powered by a WebSockets back-end on a server. This course builds on "OpenAI API: Building Front-End Voice Apps with the Realtime API and WebRTC" and explores how to host the API integration in an agnostic server.
+
 ## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+These exercise files can be used in GitHub Codespaces or in your local dev environment. Here's a breakdown of the files for reference:
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+- `./relay-server/`: A front-end-agnostic FastAPI Python relay server using WebSockets to interface with the OpenAI API.
+- `./front-end/`: A custom vanilla JavaScript front-end app providing voice, text, and function calling. (This is a refactored version of the app built in the WebRTC course.)
+- `./generic-frontend/`: A generic Next.js app for demonstrating the Realtime API text and voice capabilities.
+- `./relay-server-prototype/`: __For reference purposes only.__ The Relay Server presented in a less split-up way which some will find easier to read. 
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+## Installing and running
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+Full instructions on how to install and run the different components are found in the `README.md` files under each folder. Here is a quick rundown:
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+> NOTE:
+> You need a separate Terminal for the Relay Server and the front-end projects. They need to run simultaneously to work.
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+1. Open the repo in GitHub Codespaces
+2. Create a `.env` file in the `./relay-server/` folder for your OpenAI API key:
+```bash
+OPENAI_API_KEY=your-api-key
+```
+3. From terminal, start the Relay Server:
+```bash
+cd relay-server
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8080
+```
+4. Open "Ports" and change the Privacy setting for `relay-server` to "Public"
+5. Under "Ports", copy the URI for `relay-server`
+6. Configure `front-end`:
+   - Open `./front-end/js/config`
+   - Paste in just the hostname in the `uri` property
+   - Change the `protocol` property to `wss://`
+7. Run `front-end` from a new terminal window:
+```bash
+cd front-end
+npm run start
+```
+8. To configure `generic-frontend`:
+   - Open `./generic-frontend/src/config.ts`
+   - Paste in just the hostname in the `uri` property
+   - Change the `protocol` property to `wss://`
+9. Run `generic-frontend` from a new terminal window:
+```bash
+cd generic-frontend
+npm run dev
+```
 
+## Instructor
+
+Morten Rand-Hendriksen
+
+Principal Staff Instructor, Speaker, Web Designer, and Software Developer
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/morten-rand-hendriksen?u=104).
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
-

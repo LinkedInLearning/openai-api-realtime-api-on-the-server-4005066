@@ -1,0 +1,14 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "Front-end app demonstrating the OpenAI Realtime API using a WebSocket relay server",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 5000"
+  },
+  "author": "mor10",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
