@@ -18,7 +18,7 @@
   },
   // Update welcome text and set terminal prompt to '$ '
   // "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
-  "onCreateCommand": "echo 'PS1=\"\\$(if [ \"\\W\" = \"\" ]; then echo \"/\"; else echo \"/\\W/\"; fi) (\\$(git branch --show-current)) $ \"' >> ~/.bashrc",
+  "onCreateCommand": "echo 'PS1=\"\\$(if [ \\\"\\W\\\" = \\\"\\\" ]; then echo \\\"/\\\"; else echo \\\"/\\W/\\\"; fi) (\\$(git branch --show-current)) $ \"' >> ~/.bashrc",
   // Install dependencies for the auth-server
   "postCreateCommand": {
     "generic-frontend": "cd generic-frontend && npm install",
