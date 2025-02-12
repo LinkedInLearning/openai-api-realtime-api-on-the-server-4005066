@@ -1,7 +1,9 @@
 {
   "customizations": {
     "codespaces": {
-      "openFiles": ["README.md"]
+      "openFiles": [
+        "README.md"
+      ]
     },
     "vscode": {
       // Set *default* container specific settings.json values on container create.
@@ -9,11 +11,14 @@
         "terminal.integrated.shell.linux": "/bin/bash"
       },
       // Add the IDs of extensions you want installed when the container is created.
-      "extensions": ["GitHub.github-vscode-theme"]
+      "extensions": [
+        "GitHub.github-vscode-theme"
+      ]
     }
   },
   // Update welcome text and set terminal prompt to '$ '
   // "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
+  "onCreateCommand": "echo 'PS1=\"\\$(if [ \"\\W\" = \"\" ]; then echo \"/\"; else echo \"/\\W/\"; fi) (\\$(git branch --show-current)) $ \"' >> ~/.bashrc",
   // Install dependencies for the auth-server
   "postCreateCommand": {
     "generic-frontend": "cd generic-frontend && npm install",
@@ -21,7 +26,11 @@
     "relay-server": "cd relay-server && pip install -r requirements.txt"
   },
   // Forward port for the auth-server and make it public
-  "forwardPorts": [3000, 5000, 8080],
+  "forwardPorts": [
+    3000,
+    5000,
+    8080
+  ],
   "portsAttributes": {
     "3000": {
       "label": "generic-frontend"
