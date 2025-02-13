@@ -4,6 +4,88 @@ All Rights Reserved.
 Licensed under the LinkedIn Learning Exercise File License (the "License").
 See LICENSE in the project root for license information.
 
+ATTRIBUTIONS:  
+
+--------------------  
+**http-server**  
+GitHub: [https://github.com/http-party/http-server](https://github.com/http-party/http-server)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**ansi-styles**  
+GitHub: [https://github.com/chalk/ansi-styles](https://github.com/chalk/ansi-styles)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**async**  
+GitHub: [https://github.com/caolan/async](https://github.com/caolan/async)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**basic-auth**  
+GitHub: [https://github.com/jshttp/basic-auth](https://github.com/jshttp/basic-auth)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**call-bound**  
+GitHub: [https://github.com/ljharb/call-bound](https://github.com/ljharb/call-bound)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**chalk**  
+GitHub: [https://github.com/chalk/chalk](https://github.com/chalk/chalk)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**color-convert**  
+GitHub: [https://github.com/Qix-/color-convert](https://github.com/Qix-/color-convert)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**color-name**  
+GitHub: [https://github.com/colorjs/color-name](https://github.com/colorjs/color-name)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**corser**  
+GitHub: [https://github.com/agrueneberg/Corser](https://github.com/agrueneberg/Corser)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**debug**  
+GitHub: [https://github.com/debug-js/debug](https://github.com/debug-js/debug)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**eventemitter3**  
+GitHub: [https://github.com/primus/eventemitter3](https://github.com/primus/eventemitter3)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**follow-redirects**  
+GitHub: [https://github.com/follow-redirects/follow-redirects](https://github.com/follow-redirects/follow-redirects)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+**function-bind**  
+GitHub: [https://github.com/Raynos/function-bind](https://github.com/Raynos/function-bind)  
+License: MIT  
+License URL: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)  
+
+--------------------  
+
 Please note, this project may automatically load third party code from external 
 repositories (for example, NPM modules, Composer packages, or other dependencies). 
 If so, such third party code may be subject to other license terms than as set 
