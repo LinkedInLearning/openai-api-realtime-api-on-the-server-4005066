@@ -64,3 +64,6 @@ Principal Staff Instructor, Speaker, Web Designer, and Software Developer
 Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/morten-rand-hendriksen?u=104).
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
+
+[lil-course-url]: https://www.linkedin.com/learning/openai-api-realtime-api-on-the-server-asi
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4D0DAQHb7sYWKqTUMQ/learning-public-crop_675_1200/B4DZUGYTrnGkAY-/0/1739568790919?e=2147483647&v=beta&t=EzObRg3eNzRbPvsMAKbYmLa1J5zJf1djtCRo7y2BLok
